@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="board">
+	<!-- <select id="total" parameterType="Map" resultType="int">
+		SELECT
+		count(*) as cnt
+		FROM bbs
+		<where>
+			<choose>
+				<when test="col=='wname'">
+					wname like '%'||#{word}||'%'
+				</when>
+				<when test="col=='title'">
+					title like '%'||#{word}||'%'
+				</when>
+				<when test="col=='content'">
+					content like '%'||#{word}||'%'
+				</when>
+			</choose>
+		</where>
+	</select>
+	<update id="upViewcnt" parameterType="int">
+		UPDATE bbs
+		SET viewcnt =
+		viewcnt + 1
+		WHERE bbsno = #{bbsno}
+	</update>
+	<select id="list" resultType="BbsDTO" parameterType="Map">
+		SELECT bbsno, wname, title, viewcnt, wdate,grpno, indent, ansnum, r
+		FROM (
+		SELECT bbsno, wname, title, viewcnt, wdate,grpno, indent, ansnum, rownum as r
+		FROM (
+		SELECT bbsno, wname, title, viewcnt, wdate, grpno, indent, ansnum
+		FROM bbs
+		<where>
+			<choose>
+				<when test="col=='wname'">
+					wname like '%'||#{word}||'%'
+				</when>
+				<when test="col=='title'">
+					title like '%'||#{word}||'%'
+				</when>
+				<when test="col=='content'">
+					content like '%'||#{word}||'%'
+				</when>
+			</choose>
+		</where>
+		ORDER BY grpno DESC, ansnum ASC
+
+		)
+		)                                                                            
+   <![CDATA[                                                                        
+   where r>=#{sno} and r<=${eno}  
+   ]]>
+	</select>
+
+	<select id="read" resultType="BbsDTO" parameterType="int">
+		SELECT bbsno, wname, title, content, viewcnt, wdate
+		FROM bbs
+		WHERE bbsno = #{bbsno}
+	</select> -->
+
+</mapper>

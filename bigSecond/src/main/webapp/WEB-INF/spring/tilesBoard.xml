@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<!DOCTYPE  tiles-definitions PUBLIC 
+    "-//Aapche Software Foundation//DTD Tiles Configuration 2.0//EN" 
+    "http://tiles.apache.org/dtds/tiles-config_2_0.dtd"> 
+
+<tiles-definitions>  
+	<definition name="/img/list" extends="main"> 
+        <put-attribute name="title" value="회원목록" /> 
+        <put-attribute name="body" value="/WEB-INF/views/img/list.jsp" /> 
+    </definition>
+    <!-- <definition name="/img/read" extends="main"> 
+        <put-attribute name="title" value="회원정보" /> 
+        <put-attribute name="body" value="/WEB-INF/views/img/read.jsp" /> 
+    </definition>
+    <definition name="/img/create" extends="main"> 
+        <put-attribute name="title" value="메모생성" /> 
+        <put-attribute name="body" value="/WEB-INF/views/img/createForm.jsp" /> 
+    </definition>  
+    <definition name="/img/reply" extends="main"> 
+        <put-attribute name="title" value="메모생성" />
+        <put-attribute name="body" value="/WEB-INF/views/img/replyForm.jsp" /> 
+    </definition> 
+    <definition name="/img/update" extends="main"> 
+        <put-attribute name="title" value="정보수정" /> 
+        <put-attribute name="body" value="/WEB-INF/views/img/updateForm.jsp" /> 
+    </definition>
+    <definition name="/img/delete" extends="main">
+        <put-attribute name="title" value="정보삭제" /> 
+        <put-attribute name="body" value="/WEB-INF/views/img/deleteForm.jsp" /> 
+    </definition> -->
+  
+</tiles-definitions>
